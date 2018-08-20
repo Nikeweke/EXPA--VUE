@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Vue experience',
   description: 'Experience from vue world',
-  base: '/EXPA--Vue/',
+  base: '/EXPA--VUE/',
   dest: '../docs',
   port: '3000',
 
