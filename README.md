@@ -1,5 +1,5 @@
 # Vue
-## https://nikeweke.github.io/EXPA--Vue/
+## https://nikeweke.github.io/EXPA--VUE/
 
 #### Quick build and push
 ```
