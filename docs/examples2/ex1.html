@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ex1: Nested comps, Scoped styles, Props | Vue experience</title>
+    <meta name="description" content="Experience from vue world">
+    
+    
+    <link rel="preload" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css" as="style"><link rel="preload" href="/EXPA--Vue/assets/js/app.ae2d5c72.js" as="script"><link rel="preload" href="/EXPA--Vue/assets/js/16.fad5dfb5.js" as="script"><link rel="prefetch" href="/EXPA--Vue/assets/js/13.74def1d3.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/2.234811cb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/3.7ca6b8c4.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/4.2b4833e9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/5.30ebec02.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/6.06abf110.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/7.b7f701bc.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/8.9887f1ba.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/9.3731be24.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/10.03d71dc4.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/11.94a6c392.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/12.277973f9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/14.0180cd55.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/15.3006bf8b.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/17.7264c971.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/18.d56a1e0e.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/19.11c7cbfb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/20.25c2266d.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/21.1bb6756d.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/22.47881125.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/23.00501bb0.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/24.1941e5b8.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/25.e0ed9eaa.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/26.f0c0c6da.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/27.d1d89fc6.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/28.33590189.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/29.12fa149c.js">
+    <link rel="stylesheet" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--Vue/" class="home-link router-link-active"><!----> <span class="site-name">Vue experience</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--Vue/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--Vue/tag-binding.html" class="sidebar-link">Vue.js - tag binding</a></li><li><a href="/EXPA--Vue/vue-webpack.html" class="sidebar-link">Vue.js - Webpack</a></li><li><a href="/EXPA--Vue/vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/EXPA--Vue/vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/EXPA--Vue/vue-resource.html" class="sidebar-link">Vue resource (http)</a></li><li><a href="/EXPA--Vue/custom-directives.html" class="sidebar-link">Custom directives</a></li><li><a href="/EXPA--Vue/vue-blade.html" class="sidebar-link">Vue JS + Blade(Laravel)</a></li><li><a href="/EXPA--Vue/tricks-tips.html" class="sidebar-link">Tricks &amp; Tips</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Best practices</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>My mixins</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 1</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Examples 2</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/EXPA--Vue/examples2/ex1.html" class="active sidebar-link">Ex1: Nested comps, Scoped styles, Props</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/EXPA--Vue/examples2/ex1.html#вnоженные-компоненты" class="sidebar-link">Вложенные компоненты</a></li><li class="sidebar-sub-header"><a href="/EXPA--Vue/examples2/ex1.html#scoped-styles" class="sidebar-link">Scoped styles</a></li><li class="sidebar-sub-header"><a href="/EXPA--Vue/examples2/ex1.html#props" class="sidebar-link">Props</a></li></ul></li><li><a href="/EXPA--Vue/examples2/ex2.html" class="sidebar-link">Ex2: PrimVsRef, Events, Event Bus</a></li><li><a href="/EXPA--Vue/examples2/ex3.html" class="sidebar-link">Ex3: Lifecycle Hooks, Slots, Dyn. comps</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="ex1-nested-comps-scoped-styles-props"><a href="#ex1-nested-comps-scoped-styles-props" aria-hidden="true" class="header-anchor">#</a> Ex1: Nested comps, Scoped styles, Props</h1> <h4 id="содержание"><a href="#содержание" aria-hidden="true" class="header-anchor">#</a> Содержание</h4> <ul><li><a href="#nested-components">Вложенные компоненты</a></li> <li><a href="#scoped-styles">Styles Scoped</a></li> <li><a href="#props">Props</a></li></ul> <hr> <h2 id="вnоженные-компоненты"><a href="#вnоженные-компоненты" aria-hidden="true" class="header-anchor">#</a> Вложенные компоненты <a id="nested-components"></a></h2> <ol><li>Создаем компонент</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!--
+  ./ src / Home.vue
+ --&gt;</span>
+
+<span class="token comment">&lt;!-- HTML template-name --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>{{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ChangeMsg()<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- JS --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+
+      <span class="token comment">// данные</span>
+      <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          msg<span class="token punctuation">:</span> <span class="token string">'Hello its Home'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// ф-ции</span>
+      methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          <span class="token function">ChangeMsg</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'here'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             <span class="token keyword">this</span><span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'GGGG'</span><span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- CSS (SASS) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">  <span class="token comment">/* empty */</span>  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><ol start="2"><li>Регистрируем его в точке входа (Видимость компонента - <strong>Глобальная</strong>)</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//  ./ src / main.js</span>
+
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span><span class="token punctuation">;</span>   <span class="token comment">// компонент в котором можно будет юзать наш компонент</span>
+
+<span class="token comment">// импорт нашего компонента</span>
+<span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">'./Home.vue'</span>   
+
+<span class="token comment">// регистрация нашего комопнента, теперь можно юзать так - &lt;home&gt;&lt;/home&gt;</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'home'</span><span class="token punctuation">,</span> Home<span class="token punctuation">)</span><span class="token punctuation">;</span>        
+
+<span class="token comment">// Рендер нашего приложения начинаеться с компонента App, которое вставиться в &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;</span>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token punctuation">:</span> <span class="token string">'#root'</span><span class="token punctuation">,</span>
+  render<span class="token punctuation">:</span> h <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><ol start="3"><li>Используем наш компонент</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!--
+./ src / App.vue
+--&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>                     <span class="token comment">&lt;!-- надо содержимое оборачивать в 1 тег какое-то, иначе ошибка --&gt;</span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>{{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>home</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>home</span><span class="token punctuation">&gt;</span></span>          <span class="token comment">&lt;!-- out: Hello its Home --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- JS --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+ <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> msg<span class="token punctuation">:</span> <span class="token string">'Hello its App'</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- CSS (SASS) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">  <span class="token comment">/* empty */</span>  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><ol start="4"><li>Используем наш компонент  (Видимость компонента - <strong>Локальная</strong>) <code>(Шаг 2,3 пропустить)</code></li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!--
+./ src / App.vue
+--&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>                     <span class="token comment">&lt;!-- надо содержимое оборачивать в 1 тег какое-то, иначе ошибка --&gt;</span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>{{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>home</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>home</span><span class="token punctuation">&gt;</span></span>          <span class="token comment">&lt;!-- out: Hello its Home --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- JS --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+
+<span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">'./Home.vue'</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token punctuation">:</span><span class="token punctuation">{</span>
+      <span class="token string">'home'</span><span class="token punctuation">:</span> Home
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> msg<span class="token punctuation">:</span> <span class="token string">'Hello its App'</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- CSS (SASS) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">  <span class="token comment">/* empty */</span>  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><h2 id="scoped-styles"><a href="#scoped-styles" aria-hidden="true" class="header-anchor">#</a> Scoped styles <a id="scoped-styles"></a></h2> <p>Например есть <strong>App.vue</strong> и <strong>Home.vue</strong>. И допустим <strong>home</strong> подключен в <strong>app</strong> как компонент. В <strong>app</strong> к тегу <code>&lt;h2&gt;</code> применяеться -красный цвет, а в компоненте - зеленый. Какой будет результат ? Оба тега будут зелеными. Что бы такого не было надо на стили вешать <code>scoped</code> - <code>&lt;style lang=&quot;scss&quot; scoped&gt;...&lt;/style&gt;</code>, тогда стили будут применяться только там где были объявлены.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- App.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Its App<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>home</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>home</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- CSS (SASS) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">  <span class="token selector">h2</span><span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span> <span class="token punctuation">}</span>  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- Home.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Its Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- CSS (SASS) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">  <span class="token selector">h2</span><span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span>green<span class="token punctuation">;</span> <span class="token punctuation">}</span>  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="props"><a href="#props" aria-hidden="true" class="header-anchor">#</a> Props <a id="props"></a></h2> <p>Передача в комопоненты свойства</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- App.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Its App<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>home</span> <span class="token attr-name">iamstring</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Hi there<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">v-bind:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>home</span><span class="token punctuation">&gt;</span></span> <span class="token comment">&lt;!-- передача свойств --&gt;</span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token comment">/* here included &lt;home&gt; */</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">return</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'Gregor'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- Home.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Its Home: {{iamstring}} {{name}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">'iamstring'</span><span class="token punctuation">,</span> <span class="token string">'name'</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>     <span class="token comment">// получаем свойства</span>
+
+    <span class="token comment">// с валидацией получаемых данных</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          type<span class="token punctuation">:</span>     String<span class="token punctuation">,</span> <span class="token comment">// Array, и т.д. - проверяем тип данных свойства, если будет не такой тип то - ошибка</span>
+          required<span class="token punctuation">:</span> <span class="token boolean">true</span>    <span class="token comment">// если не будут передавать это свойство - тоже ошибка</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--Vue/examples1/ex6-dynamic-form-builder.html" class="prev">
+          Ex6: Dynamic Form Builder
+        </a></span> <span class="next"><a href="/EXPA--Vue/examples2/ex2.html">
+          Ex2: PrimVsRef, Events, Event Bus
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--Vue/assets/js/16.fad5dfb5.js" defer></script><script src="/EXPA--Vue/assets/js/app.ae2d5c72.js" defer></script>
+  </body>
+</html>

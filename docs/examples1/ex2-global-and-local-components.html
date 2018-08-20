@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ex2: Global &amp; local components | Vue experience</title>
+    <meta name="description" content="Experience from vue world">
+    
+    
+    <link rel="preload" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css" as="style"><link rel="preload" href="/EXPA--Vue/assets/js/app.ae2d5c72.js" as="script"><link rel="preload" href="/EXPA--Vue/assets/js/10.03d71dc4.js" as="script"><link rel="prefetch" href="/EXPA--Vue/assets/js/13.74def1d3.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/2.234811cb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/3.7ca6b8c4.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/4.2b4833e9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/5.30ebec02.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/6.06abf110.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/7.b7f701bc.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/8.9887f1ba.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/9.3731be24.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/11.94a6c392.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/12.277973f9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/14.0180cd55.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/15.3006bf8b.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/16.fad5dfb5.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/17.7264c971.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/18.d56a1e0e.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/19.11c7cbfb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/20.25c2266d.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/21.1bb6756d.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/22.47881125.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/23.00501bb0.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/24.1941e5b8.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/25.e0ed9eaa.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/26.f0c0c6da.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/27.d1d89fc6.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/28.33590189.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/29.12fa149c.js">
+    <link rel="stylesheet" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--Vue/" class="home-link router-link-active"><!----> <span class="site-name">Vue experience</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--Vue/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--Vue/tag-binding.html" class="sidebar-link">Vue.js - tag binding</a></li><li><a href="/EXPA--Vue/vue-webpack.html" class="sidebar-link">Vue.js - Webpack</a></li><li><a href="/EXPA--Vue/vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/EXPA--Vue/vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/EXPA--Vue/vue-resource.html" class="sidebar-link">Vue resource (http)</a></li><li><a href="/EXPA--Vue/custom-directives.html" class="sidebar-link">Custom directives</a></li><li><a href="/EXPA--Vue/vue-blade.html" class="sidebar-link">Vue JS + Blade(Laravel)</a></li><li><a href="/EXPA--Vue/tricks-tips.html" class="sidebar-link">Tricks &amp; Tips</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Best practices</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>My mixins</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Examples 1</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/EXPA--Vue/examples1/ex1-slots.html" class="sidebar-link">Ex1: Slots, props, global components</a></li><li><a href="/EXPA--Vue/examples1/ex2-global-and-local-components.html" class="active sidebar-link">Ex2: Global &amp; local components</a></li><li><a href="/EXPA--Vue/examples1/ex3-prevent-some-action.html" class="sidebar-link">Ex3: Prevent some action</a></li><li><a href="/EXPA--Vue/examples1/ex4-v-model-modifiers.html" class="sidebar-link">Ex4: V-model modifiers</a></li><li><a href="/EXPA--Vue/examples1/ex5-making-tabs.html" class="sidebar-link">Ex5: Making tabs with &lt;component&gt;</a></li><li><a href="/EXPA--Vue/examples1/ex6-dynamic-form-builder.html" class="sidebar-link">Ex6: Dynamic Form Builder</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 2</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="ex2-global-local-components"><a href="#ex2-global-local-components" aria-hidden="true" class="header-anchor">#</a> Ex2: Global &amp; local components</h1> <h6 id="index-html"><a href="#index-html" aria-hidden="true" class="header-anchor">#</a> index.html</h6> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Welcome to Vue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://fonts.googleapis.com/css?family=Open+Sans<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/vue<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+   <span class="token selector">body</span><span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Open Sans'</span>, sans-serif<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token selector">.container</span><span class="token punctuation">{</span>
+     <span class="token property">padding-left</span><span class="token punctuation">:</span> 20%<span class="token punctuation">;</span>
+     <span class="token property">padding-right</span><span class="token punctuation">:</span> 20%<span class="token punctuation">;</span>
+     <span class="token property">padding-top</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main-div</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>base.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h6 id="base-js"><a href="#base-js" aria-hidden="true" class="header-anchor">#</a> base.js</h6> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// ==========================================&gt; nestedComponent</span>
+<span class="token keyword">const</span> nestedComponent <span class="token operator">=</span> <span class="token punctuation">{</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`&lt;div&gt;I am nesting in main component&lt;/div&gt;`</span></span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// ==========================================&gt; mainComponent</span>
+<span class="token keyword">const</span> mainComponent <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Регистируем компоненты - Локально</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'nested-div'</span><span class="token punctuation">:</span> nestedComponent
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`&lt;div&gt;
+                  &lt;h3&gt;I am Main here!&lt;/h3&gt;
+
+                  &lt;nested-div /&gt;
+                  
+                &lt;/div&gt;`</span></span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// Регистируем компоненты - Глобально</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'main-div'</span><span class="token punctuation">,</span> mainComponent<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--Vue/examples1/ex1-slots.html" class="prev">
+          Ex1: Slots, props, global components
+        </a></span> <span class="next"><a href="/EXPA--Vue/examples1/ex3-prevent-some-action.html">
+          Ex3: Prevent some action
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--Vue/assets/js/10.03d71dc4.js" defer></script><script src="/EXPA--Vue/assets/js/app.ae2d5c72.js" defer></script>
+  </body>
+</html>

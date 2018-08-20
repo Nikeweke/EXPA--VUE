@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Api mixin | Vue experience</title>
+    <meta name="description" content="Experience from vue world">
+    
+    
+    <link rel="preload" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css" as="style"><link rel="preload" href="/EXPA--Vue/assets/js/app.ae2d5c72.js" as="script"><link rel="preload" href="/EXPA--Vue/assets/js/20.25c2266d.js" as="script"><link rel="prefetch" href="/EXPA--Vue/assets/js/13.74def1d3.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/2.234811cb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/3.7ca6b8c4.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/4.2b4833e9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/5.30ebec02.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/6.06abf110.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/7.b7f701bc.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/8.9887f1ba.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/9.3731be24.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/10.03d71dc4.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/11.94a6c392.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/12.277973f9.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/14.0180cd55.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/15.3006bf8b.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/16.fad5dfb5.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/17.7264c971.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/18.d56a1e0e.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/19.11c7cbfb.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/21.1bb6756d.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/22.47881125.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/23.00501bb0.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/24.1941e5b8.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/25.e0ed9eaa.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/26.f0c0c6da.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/27.d1d89fc6.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/28.33590189.js"><link rel="prefetch" href="/EXPA--Vue/assets/js/29.12fa149c.js">
+    <link rel="stylesheet" href="/EXPA--Vue/assets/css/0.styles.e81159ff.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--Vue/" class="home-link router-link-active"><!----> <span class="site-name">Vue experience</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--Vue/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--Vue/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--Vue/tag-binding.html" class="sidebar-link">Vue.js - tag binding</a></li><li><a href="/EXPA--Vue/vue-webpack.html" class="sidebar-link">Vue.js - Webpack</a></li><li><a href="/EXPA--Vue/vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/EXPA--Vue/vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/EXPA--Vue/vue-resource.html" class="sidebar-link">Vue resource (http)</a></li><li><a href="/EXPA--Vue/custom-directives.html" class="sidebar-link">Custom directives</a></li><li><a href="/EXPA--Vue/vue-blade.html" class="sidebar-link">Vue JS + Blade(Laravel)</a></li><li><a href="/EXPA--Vue/tricks-tips.html" class="sidebar-link">Tricks &amp; Tips</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Best practices</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>My mixins</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/EXPA--Vue/my-mixins/api.html" class="active sidebar-link">Api mixin</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 1</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 2</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="api-mixin"><a href="#api-mixin" aria-hidden="true" class="header-anchor">#</a> Api mixin</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> apiMixin <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// DATA </span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    api<span class="token punctuation">:</span> <span class="token string">'http://localhost:3000/api'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// METHODS</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+    * Сделать запрос (vue resource)
+    * @param {String} url      адрес
+    * @param {String} method   метод
+    * @param {Object} postData данные
+    * @param {Object} options  доп. опции 
+    * @return {Promise} ответ
+    */</span>
+    <span class="token function">sendRequest</span><span class="token punctuation">(</span>url <span class="token operator">=</span> <span class="token string">'/'</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token string">'get'</span><span class="token punctuation">,</span> postData <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> options <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">[</span>method<span class="token punctuation">]</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> postData<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>response <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">/**
+    * Сделать запрос (fetch)
+    * @param {String} url      адрес
+    * @param {String} method   метод
+    * @param {Object} postData данные
+    * @return {Promise} ответ
+    */</span>
+    <span class="token function">sendRequestFetch</span><span class="token punctuation">(</span>url <span class="token operator">=</span> <span class="token string">'/'</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token string">'GET'</span><span class="token punctuation">,</span> postData <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">let</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        body<span class="token punctuation">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>postData<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        headers<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'content-type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">}</span>
+        <span class="token comment">// headers: {'content-type': 'application/x-www-form-urlencoded'}</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> apiMixin
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--Vue/best-practices/async-error-handling.html" class="prev">
+          Async error handling
+        </a></span> <span class="next"><a href="/EXPA--Vue/examples1/ex1-slots.html">
+          Ex1: Slots, props, global components
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--Vue/assets/js/20.25c2266d.js" defer></script><script src="/EXPA--Vue/assets/js/app.ae2d5c72.js" defer></script>
+  </body>
+</html>
