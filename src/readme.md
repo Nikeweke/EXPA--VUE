@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Vue.svg/2000px-Vue.svg.png
+heroImage: https://vuejs.org/images/logo.png?_sw-precache=cf23526f451784ff137f161b8fe18d5a
 actionText: Get Started →
 actionLink: /introduction.md
 footer: MIT Licensed | Copyright © 2018-present Nikeweke

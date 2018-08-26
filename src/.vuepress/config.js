@@ -19,6 +19,7 @@ module.exports = {
       '/custom-directives.md',
       '/vue-blade.md',
       '/tricks-tips.md',
+      '/async-comps.md',
 
       {
         title: 'Best practices',
