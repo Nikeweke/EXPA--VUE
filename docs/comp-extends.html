@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Component extend | Vue experience</title>
+    <meta name="description" content="Experience from vue world">
+    
+    
+    <link rel="preload" href="/EXPA--VUE/assets/css/0.styles.24ad33b6.css" as="style"><link rel="preload" href="/EXPA--VUE/assets/js/app.f2056325.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/8.46d5949d.js" as="script"><link rel="prefetch" href="/EXPA--VUE/assets/js/14.9c408870.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/2.234811cb.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/3.dba5fc01.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/4.813ee26f.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/5.c0f400cf.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/6.05d8a078.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/7.339952b4.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/9.6195e703.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/10.59f4c59d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/11.0478edcf.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/12.a0a07261.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/13.a100ec4b.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/15.c6fb70c5.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/16.5853a2c3.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/17.f094b6a6.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/18.dde1ff56.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/19.8b049b91.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/20.ab9b759c.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/21.8cdfbadc.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/22.9620b314.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/23.f6161c96.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/24.d986b0f7.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/25.b3cc52ad.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/26.1090b1de.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/27.da769a1f.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/28.13be9653.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/29.ba22ae0f.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/30.045aab3d.js">
+    <link rel="stylesheet" href="/EXPA--VUE/assets/css/0.styles.24ad33b6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--VUE/" class="home-link router-link-active"><!----> <span class="site-name">Vue experience</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--VUE/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--VUE/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--VUE/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--VUE/tag-binding.html" class="sidebar-link">Vue.js - tag binding</a></li><li><a href="/EXPA--VUE/vue-webpack.html" class="sidebar-link">Vue.js - Webpack</a></li><li><a href="/EXPA--VUE/vue-router.html" class="sidebar-link">Vue-router</a></li><li><a href="/EXPA--VUE/vuex.html" class="sidebar-link">Vuex</a></li><li><a href="/EXPA--VUE/vue-resource.html" class="sidebar-link">Vue resource (http)</a></li><li><a href="/EXPA--VUE/custom-directives.html" class="sidebar-link">Custom directives</a></li><li><a href="/EXPA--VUE/vue-blade.html" class="sidebar-link">Vue JS + Blade(Laravel)</a></li><li><a href="/EXPA--VUE/tricks-tips.html" class="sidebar-link">Tricks &amp; Tips</a></li><li><a href="/EXPA--VUE/async-comps.html" class="sidebar-link">Async components</a></li><li><a href="/EXPA--VUE/comp-extends.html" class="active sidebar-link">Component extend</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Best practices</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>My mixins</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 1</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Examples 2</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="component-extend"><a href="#component-extend" aria-hidden="true" class="header-anchor">#</a> Component extend</h1> <p>Можно сделать один компонент, а потом расширять его другим функционалом, дочерних компонентов. Если в компоненте отцовском будут такие же методы, поля и т.д., то они перезапишуться дочернем методом.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- App.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &lt;img alt=&quot;Vue logo&quot; src=&quot;./assets/logo.png&quot;&gt; --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Child</span> <span class="token attr-name">msg</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Welcome to Your Vue.js App<span class="token punctuation">&quot;</span></span> <span class="token attr-name">msg2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>There<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">import</span> Child <span class="token keyword">from</span> <span class="token string">'./components/Child.js'</span>
+
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'app'</span><span class="token punctuation">,</span>
+
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      Child
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- Parent --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Hello {{ getName() }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+    {{ msg }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'Parent'</span><span class="token punctuation">,</span>
+
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    msg<span class="token punctuation">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">'Alex'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Child.js</span>
+<span class="token keyword">import</span> Base <span class="token keyword">from</span> <span class="token string">'./Base'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'Child'</span><span class="token punctuation">,</span>
+
+  <span class="token keyword">extends</span><span class="token punctuation">:</span> Base<span class="token punctuation">,</span>  <span class="token comment">// унаследование компонента</span>
+ 
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    msg2<span class="token punctuation">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">'Franki '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>msg2 <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>msg
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">Child как Vue-file</p> <p>Если определить <code>Child.js</code> как <code>Child.vue</code>, и добавить туда секцию <code>&lt;template&gt;...&lt;/template&gt;</code>, то этот темплейт перекроет отцовский контент. И это касается всего, что одинаково в обоих компонентах. <strong>Дочерний будет затирать отцовский</strong>.</p></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--VUE/async-comps.html" class="prev">
+          Async components
+        </a></span> <span class="next"><a href="/EXPA--VUE/best-practices/script.html">
+          Script
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--VUE/assets/js/8.46d5949d.js" defer></script><script src="/EXPA--VUE/assets/js/app.f2056325.js" defer></script>
+  </body>
+</html>

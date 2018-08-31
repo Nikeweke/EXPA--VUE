@@ -20,6 +20,7 @@ module.exports = {
       '/vue-blade.md',
       '/tricks-tips.md',
       '/async-comps.md',
+      'comp-extends.md',
 
       {
         title: 'Best practices',
