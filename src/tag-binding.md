@@ -1,8 +1,6 @@
-# Vue.js - tag binding
+# Tag binding
 
-#### Содержание
-
-* Начало
+* [Start](#start)
 * [Change Var](#change_var)
 * [V-model](#v-model)
 * [V-bind, v-html](#v-bind)
@@ -19,40 +17,47 @@
 
 ---
 
-## Начало 
+### Start 
 
 Подключить в `<head>` Vue.js и свой `app.js`
 
 ```html
-<!-- VUE.js -->
+
 <head>
-<script src="https://unpkg.com/vue" charset="utf-8"></script> <!-- must be in head -->
+
+  <!-- VUE.js lib -->
+  <script src="https://unpkg.com/vue" charset="utf-8"></script> <!-- must be in head -->
+
 </head>
 
-<div id="app">{{ name }}</div>
-...
+<body>  
+  
+  <div id="app">{{ name }}</div>
 
-<script src="app.js" charset="utf-8"></script> <!-- must be before close body tag -->
+  <!-- js-script smust be before close body tag -->
+  <script src="app.js" charset="utf-8">
+    // тот элемент в котором можно юзать переменные, ф-ции и т.д.
+    new Vue({
+      // область где Vue будет работать, в этом случае в div с ID=app
+      el: '#app',
+
+      // переменные
+      data: {
+        name: 'rat',
+      },
+
+      // функции
+      methods: {
+      },
+    })
+
+  </script> 
+
 </body>
 ```
+<br>
 
-```js
-new Vue({
-    // тот элемент в котором можно юзать переменные, ф-ции и т.д.
-    el: '#app',
-
-    // переменные
-    data: {
-    name: 'rat',
-    },
-
-    // функции
-    methods: {
-    },
-  })
-```
-
-## Change Var <a id="change_var"></a>
+### Change Var <a id="change_var"></a>
 
 ```html
 <div id="app">
@@ -91,7 +96,7 @@ new Vue({
 
 ```
 
-## V-model <a id="v-model"></a>
+### V-model <a id="v-model"></a>
 
 
 
@@ -108,7 +113,7 @@ new Vue({
 </div>
 ```
 
-## V-bind, v-html
+### V-bind, v-html
 
 ```html
 <!-- <a href="{{ website }}">Anchor - not workable anchor</a> <br /> -->
@@ -136,7 +141,7 @@ new Vue({
 })
 ```
 
-## V-on - Events Modifiers <a id="v-on-1"></a>
+### V-on - Events Modifiers <a id="v-on-1"></a>
 
 
 ```html
@@ -197,7 +202,7 @@ new Vue({
 })
 ```
 
-## V-on - Keyboard Events <a id="v-on-2"></a>
+### V-on - Keyboard Events <a id="v-on-2"></a>
 
 
 
@@ -227,7 +232,7 @@ new Vue({
 </div>
 ```
 
-## V-for <a id="v-for"></a>
+### V-for <a id="v-for"></a>
 
 
 
@@ -264,7 +269,7 @@ new Vue({
 })
 ```
 
-## Computed propertires <a id="computed"></a>
+### Computed propertires <a id="computed"></a>
 
 
 
@@ -305,7 +310,7 @@ new Vue({
 })
 ```
 
-## Dynamic CSS <a id="dynamic-css"></a>
+### Dynamic CSS <a id="dynamic-css"></a>
 
 
 
@@ -327,7 +332,7 @@ new Vue({
 })
 ```
 
-## Conditionals <a id="conditionals"></a>
+### Conditionals <a id="conditionals"></a>
  
 
 ```html
@@ -362,7 +367,7 @@ new Vue({
 })
 ```
 
-## Components <a id="components "></a>
+### Components <a id="components "></a>
 
 
 ```html
@@ -386,7 +391,7 @@ new Vue({
 })
 ```
 
-## Refs <a id="refs"></a>
+### Refs <a id="refs"></a>
 ```html
 <div class="field">
   <div class="control">
@@ -413,7 +418,7 @@ new Vue({
 })
 ```
 
-## Multiple Instances <a id="multiple"></a>
+### Multiple Instances <a id="multiple"></a>
 
 
 ```html

@@ -10,9 +10,9 @@ module.exports = {
       { text: 'Home', link: '/' },
     ],
     sidebar: [
-      '/introduction.md',
+      '/intro.md',  
       '/tag-binding.md',
-      '/vue-webpack.md',
+      '/spa.md',
       '/vue-router.md',
       '/vuex.md',
       '/vue-resource.md',
@@ -22,6 +22,8 @@ module.exports = {
       '/async-comps.md',
       '/comp-extends.md',
       '/render-fns.md',
+
+      '/links.md',
 
       {
         title: 'Best practices',
@@ -53,6 +55,7 @@ module.exports = {
           '/examples1/ex6-dynamic-form-builder.md'
         ]
       },
+
       {
         title: 'Examples 2',
         collapsable: true,
