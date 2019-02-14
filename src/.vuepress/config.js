@@ -22,6 +22,7 @@ module.exports = {
       '/async-comps.md',
       '/comp-extends.md',
       '/render-fns.md',
+      '/nuxt.md',
 
       '/links.md',
 
