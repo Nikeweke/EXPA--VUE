@@ -69,6 +69,63 @@ return h(
 )
 ```
 
+```js
+// результат: <div><h2> ... </h2></div>
+return h(
+  // tag element
+  'div',
+
+  // element property
+  {},
+
+  [h('h2', this.$slots.default)]
+)
+```
+
+```js
+<template>
+  <Tabs>
+    <Tab title="tab 1" />
+    <Tab title="tab 2" />
+    <Tab title="tab 3" />
+    <h2>Will not display</h2>
+  </Tabs>
+</template>
+
+<script>
+export default {
+  name: 'app',
+
+  components: {
+    Tabs: {
+      render(h) {
+        let titles = []
+        let tabs   = []
+
+        // filter if inside element but only vue-components
+        for (let item of this.$slots.default) {
+          if (item.componentOptions) {
+            tabs.push(item)
+            titles.push(item.componentOptions.propsData.title)
+          }
+        }
+
+        return h('div', {}, [titles, tabs])
+      }
+    },
+
+    Tab: {
+      props: ['title'],
+
+      render(h) {
+        return h('h2', this.title)
+      }
+    }
+  }
+}
+</script>
+```
+
 
 ### Параметры render функции
 ```js

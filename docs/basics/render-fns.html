@@ -7,7 +7,7 @@
     <meta name="description" content="Experience from vue world">
     
     
-    <link rel="preload" href="/EXPA--VUE/assets/css/0.styles.f3460fb4.css" as="style"><link rel="preload" href="/EXPA--VUE/assets/js/app.1575c050.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/2.73c9cae3.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/14.50f4c4c3.js" as="script"><link rel="prefetch" href="/EXPA--VUE/assets/js/10.ba16b26e.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/11.55932442.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/12.91389de7.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/13.fd1f761c.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/15.a7baf81d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/16.c4432707.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/17.19851cb2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/18.ca757029.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/19.56677196.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/20.1658b5a0.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/21.b51d47b2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/3.adb49a99.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/4.9d03cd01.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/5.846ffdba.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/6.d7baec50.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/7.d7dab063.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/8.025bd8e2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/9.be72ec34.js">
+    <link rel="preload" href="/EXPA--VUE/assets/css/0.styles.f3460fb4.css" as="style"><link rel="preload" href="/EXPA--VUE/assets/js/app.f2e9f4fc.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/2.73c9cae3.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/14.6dfbe58e.js" as="script"><link rel="prefetch" href="/EXPA--VUE/assets/js/10.ba16b26e.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/11.55932442.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/12.1c9b38a8.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/13.112bd42b.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/15.a7baf81d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/16.c4432707.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/17.7dd5a89a.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/18.9f708efd.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/19.05ff5097.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/20.1ef22ea4.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/21.b51d47b2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/3.adb49a99.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/4.8188c51b.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/5.846ffdba.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/6.d7baec50.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/7.b26ef1cf.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/8.0a57b853.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/9.be72ec34.js">
     <link rel="stylesheet" href="/EXPA--VUE/assets/css/0.styles.f3460fb4.css">
   </head>
   <body>
@@ -53,6 +53,57 @@
   <span class="token comment">// childs</span>
   <span class="token punctuation">[</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token string">'I am child h2'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h4'</span><span class="token punctuation">,</span> <span class="token string">'I am child h4'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">]</span>
 <span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// результат: &lt;div&gt;&lt;h2&gt; ... &lt;/h2&gt;&lt;/div&gt;</span>
+<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>
+  <span class="token comment">// tag element</span>
+  <span class="token string">'div'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// element property</span>
+  <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">[</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$slots<span class="token punctuation">.</span>default<span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Tabs<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Tab title<span class="token operator">=</span><span class="token string">&quot;tab 1&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Tab title<span class="token operator">=</span><span class="token string">&quot;tab 2&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Tab title<span class="token operator">=</span><span class="token string">&quot;tab 3&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Will not display<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Tabs<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'app'</span><span class="token punctuation">,</span>
+
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    Tabs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> titles <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">let</span> tabs   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        <span class="token comment">// filter if inside element but only vue-components</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$slots<span class="token punctuation">.</span>default<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">.</span>componentOptions<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            tabs<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+            titles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>componentOptions<span class="token punctuation">.</span>propsData<span class="token punctuation">.</span>title<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>titles<span class="token punctuation">,</span> tabs<span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    Tab<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      props<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+      <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 </code></pre></div><h3 id="параметры-render-функции"><a href="#параметры-render-функции" aria-hidden="true" class="header-anchor">#</a> Параметры render функции</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
   <span class="token comment">// эта функция принимает:</span>
@@ -100,6 +151,6 @@
         </a>
         →
       </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/EXPA--VUE/assets/js/app.1575c050.js" defer></script><script src="/EXPA--VUE/assets/js/2.73c9cae3.js" defer></script><script src="/EXPA--VUE/assets/js/14.50f4c4c3.js" defer></script>
+    <script src="/EXPA--VUE/assets/js/app.f2e9f4fc.js" defer></script><script src="/EXPA--VUE/assets/js/2.73c9cae3.js" defer></script><script src="/EXPA--VUE/assets/js/14.6dfbe58e.js" defer></script>
   </body>
 </html>
