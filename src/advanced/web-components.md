@@ -1,6 +1,7 @@
 # Vue app as web-component
 
 * [Vue app in angular 5](https://stackoverflow.com/questions/49724029/using-vue-components-in-angular-5)
+* [Vue and angular example](https://github.com/Nikeweke/EXPA--VUE/blob/master/src/assets/Integration-vue-angular.rar)
 
 Можно сделать из приложения Vue - [web-component](https://developer.mozilla.org/en/docs/Web/Web_Components) (а конкретно `custom element`), это новый стандарт который помогает сделать собственные теги как обычный `div`, плюс функционал. 
 
