@@ -1,4 +1,4 @@
-# Making tabs with `<component>`
+# Tabs with `<component`
 
 `<component is="name-component">` - с помощью изменения аттрибута **is** можно отображать любой компонент по зарегистрированому имени
 
