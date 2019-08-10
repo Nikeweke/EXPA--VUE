@@ -1,3 +1,6 @@
+
+
+
 module.exports = {
   title: 'Vue experience',
   description: 'Experience from vue world',
@@ -11,60 +14,23 @@ module.exports = {
     ],
     sidebar: [
       '/intro.md',  
-      '/tag-binding.md',
-      '/spa.md',
-      '/vue-router.md',
-      '/vuex.md',
-      '/vue-resource.md',
-      '/custom-directives.md',
-      '/vue-blade.md',
-      '/tricks-tips.md',
-      '/async-comps.md',
-      '/comp-extends.md',
-      '/render-fns.md',
-      '/nuxt.md',
-
-      '/links.md',
-
+   
       {
-        title: 'Best practices',
-        collapsable: true,
-        children: [
-          '/best-practices/script.md',
-          '/best-practices/template.md',
-          '/best-practices/async-error-handling.md',
-        ]
+        title: 'Basics',
+        collapsable: false,
+        children: require('../basics/__index') 
       },
 
       {
-        title: 'My mixins',
+        title: 'Packages',
         collapsable: true,
-        children: [
-          '/my-mixins/api.md',
-        ]
+        children: require('../packages/__index') 
       },
 
       {
-        title: 'Examples 1',
+        title: 'Advanced',
         collapsable: true,
-        children: [
-          '/examples1/ex1-slots.md',
-          '/examples1/ex2-global-and-local-components.md',
-          '/examples1/ex3-prevent-some-action.md',
-          '/examples1/ex4-v-model-modifiers.md',
-          '/examples1/ex5-making-tabs.md',
-          '/examples1/ex6-dynamic-form-builder.md'
-        ]
-      },
-
-      {
-        title: 'Examples 2',
-        collapsable: true,
-        children: [
-          '/examples2/ex1.md',
-          '/examples2/ex2.md',
-          '/examples2/ex3.md',
-        ]
+        children: require('../advanced/__index') 
       },
     ]
   }

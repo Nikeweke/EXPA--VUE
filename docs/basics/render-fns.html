@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Render функции | Vue experience</title>
+    <meta name="description" content="Experience from vue world">
+    
+    
+    <link rel="preload" href="/EXPA--VUE/assets/css/0.styles.f3460fb4.css" as="style"><link rel="preload" href="/EXPA--VUE/assets/js/app.016773be.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/2.73c9cae3.js" as="script"><link rel="preload" href="/EXPA--VUE/assets/js/14.50f4c4c3.js" as="script"><link rel="prefetch" href="/EXPA--VUE/assets/js/10.c0de5053.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/11.55932442.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/12.7a1196b2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/13.fd1f761c.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/15.a7baf81d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/16.c4432707.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/17.288bf9b0.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/18.bc80265d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/19.a3337062.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/20.1ef22ea4.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/21.b51d47b2.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/3.adb49a99.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/4.9d03cd01.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/5.846ffdba.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/6.d7baec50.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/7.b26ef1cf.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/8.9fa10a8d.js"><link rel="prefetch" href="/EXPA--VUE/assets/js/9.9ef994c3.js">
+    <link rel="stylesheet" href="/EXPA--VUE/assets/css/0.styles.f3460fb4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--VUE/" class="home-link router-link-active"><!----> <span class="site-name">Vue experience</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--VUE/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--VUE/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--VUE/intro.html" class="sidebar-link">Intro</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Basics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/EXPA--VUE/basics/intro.html" class="sidebar-link">Tag binding</a></li><li><a href="/EXPA--VUE/basics/custom-directives.html" class="sidebar-link">Custom directives</a></li><li><a href="/EXPA--VUE/basics/async-comps.html" class="sidebar-link">Async components</a></li><li><a href="/EXPA--VUE/basics/render-fns.html" class="active sidebar-link">Render функции</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/EXPA--VUE/basics/jsx.html" class="sidebar-link">Зачем нужен JSX?</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Packages</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Advanced</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="render-функции"><a href="#render-функции" aria-hidden="true" class="header-anchor">#</a> Render функции</h1> <h4 id="содержание"><a href="#содержание" aria-hidden="true" class="header-anchor">#</a> Содержание</h4> <p></p><div class="table-of-contents"><ul><li><a href="#intro">Intro</a></li><li><a href="#так-выгnядит-render-function-component">Так выглядит render-function component</a></li><li><a href="#пример-render-функций-и-резуnьтаты">Пример render функций и результаты</a></li><li><a href="#параметры-render-функции">Параметры render функции</a></li></ul></div><p></p> <hr> <h3 id="intro"><a href="#intro" aria-hidden="true" class="header-anchor">#</a> Intro</h3> <p><strong>Render</strong> функция делает разметку вместо секции <code>&lt;template&gt;&lt;/template&gt;</code>.</p> <h3 id="так-выгnядит-render-function-component"><a href="#так-выгnядит-render-function-component" aria-hidden="true" class="header-anchor">#</a> Так выглядит render-function component</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token string">'I am h2 tag'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <h3 id="пример-render-функций-и-резуnьтаты"><a href="#пример-render-функций-и-резуnьтаты" aria-hidden="true" class="header-anchor">#</a> Пример render функций и результаты</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// результат: &lt;h1&gt;hello&lt;/h1&gt; </span>
+<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span> <span class="token string">'hello'</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// результат: &lt;div&gt;hello&lt;/div&gt; с стилями и кликом</span>
+<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>
+  <span class="token comment">// tag element</span>
+  <span class="token string">'div'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// element property</span>
+  <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token string">'color: red; cursor: pointer'</span><span class="token punctuation">,</span>
+    on<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">click</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Was clicked'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// childs</span>
+  <span class="token string">'hello'</span>
+<span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* результат: 
+  &lt;div&gt;
+    &lt;h2&gt;I am child h2&lt;/h2&gt;
+    &lt;h4&gt;I am child h4&lt;/h4&gt;
+  &lt;/div&gt;
+*/</span>
+
+<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>
+  <span class="token comment">// tag element</span>
+  <span class="token string">'div'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// element property</span>
+  <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// childs</span>
+  <span class="token punctuation">[</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token string">'I am child h2'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'h4'</span><span class="token punctuation">,</span> <span class="token string">'I am child h4'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h3 id="параметры-render-функции"><a href="#параметры-render-функции" aria-hidden="true" class="header-anchor">#</a> Параметры render функции</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// эта функция принимает:</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>
+    <span class="token comment">// 1)</span>
+    <span class="token comment">// {String | Object | Function}</span>
+    <span class="token comment">// Название тега HTML, опции компонента, или асинхронная функция,</span>
+    <span class="token comment">// возвращающая один из двух них. Обязательный параметр.</span>
+    <span class="token comment">// Также может быть компонент(ex. SomeComp, без ковычек)</span>
+    <span class="token string">'div'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 2)</span>
+    <span class="token comment">// {Object}</span>
+    <span class="token comment">// Объект данных, содержащий атрибуты,</span>
+    <span class="token comment">// который вы бы указали в шаблоне. Опциональный параметр.</span>
+    <span class="token comment">// Подробнее: https://ru.vuejs.org/v2/guide/render-function.html#%D0%9F%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE-%D0%BE%D0%B1-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">'class'</span><span class="token punctuation">:</span> <span class="token string">'my-class'</span><span class="token punctuation">,</span>
+      on<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token function">click</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Hello there, i was clicked'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+    
+    <span class="token comment">// {String | Array}</span>
+    <span class="token comment">// Дочерние VNode'ы, создаваемые с помощью `createElement()`</span>
+    <span class="token comment">// или просто строки для получения 'текстовых VNode'. Опциональный параметр.</span>
+    <span class="token punctuation">[</span>
+      <span class="token function">h</span><span class="token punctuation">(</span>VueCompTest<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function">h</span><span class="token punctuation">(</span>VueCompTest<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token function">h</span><span class="token punctuation">(</span>SecondRenderTest<span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+    <span class="token comment">// OR</span>
+    <span class="token comment">// this.$slots.default  // взять то что было передано внутрь комопонента</span>
+  <span class="token punctuation">)</span> 
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--VUE/basics/async-comps.html" class="prev">
+          Async components
+        </a></span> <span class="next"><a href="/EXPA--VUE/basics/jsx.html">
+          Зачем нужен JSX?
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/EXPA--VUE/assets/js/app.016773be.js" defer></script><script src="/EXPA--VUE/assets/js/2.73c9cae3.js" defer></script><script src="/EXPA--VUE/assets/js/14.50f4c4c3.js" defer></script>
+  </body>
+</html>

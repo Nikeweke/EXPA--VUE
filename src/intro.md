@@ -1,3 +1,12 @@
-# What is Vue?
+# Intro
 
-**Vue (произносится `/vjuː/`, примерно как `view`)** — это прогрессивный фреймворк для создания пользовательских интерфейсов. В отличие от фреймворков-монолитов, Vue создан пригодным для постепенного внедрения. Его ядро в первую очередь решает задачи уровня представления (view), что упрощает интеграцию с другими библиотеками и существующими проектами. С другой стороны, Vue полностью подходит и для создания сложных одностраничных приложений (SPA, Single-Page Applications), если использовать его совместно с современными инструментами и дополнительными библиотеками.
+#### Best practices
+* [Medium article](https://blog.usejournal.com/vue-js-best-practices-c5da8d7af48d)
+* [Adraba BP](https://github.com/Nikeweke/Adraba-FE-Best-Practices/tree/master/vue)
+
+#### Ready to use components
+* [My vue components](https://github.com/Nikeweke/Vue-My-Components)
+
+#### Nuxt.js
+* [Example how to use it](https://www.codementor.io/lautiamkok/creating-a-nuxt-application-with-koa-express-and-slim-cfqjp0ylw)
+* [Example with express](https://github.com/lautiamkok/nuxt-express)
